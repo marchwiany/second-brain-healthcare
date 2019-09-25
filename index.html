@@ -1,10 +1,25 @@
----
-title: Second Brain Healthcare
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-<nav>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Second Brain Healthcare</title>
+    <link href="images/favicon.png" rel="icon" type="image/png" />
+    <link href="stylesheets/application.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&display=swap" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index">
+    <nav>
 	<a href="" class="logo">
-		<%= image_tag 'logo.svg', alt: 'Second Brain Healthcare' %>
+		<img alt="Second Brain Healthcare" src="images/logo.svg" />
 	</a>
 	<ul>
 		<li>
@@ -37,7 +52,7 @@ title: Second Brain Healthcare
 	</header>
 
 	<section class="image-text-block-container" id="about">
-		<%= image_tag 'lifestyle/group.jpg', alt: '' %>
+		<img alt="" src="images/lifestyle/group.jpg" />
 		<div class="text-block">
 			<h2>Second Brain Healthcare is a here to heal your gut.</h2>
 			<p>Your gut health drives almost every facet of your health including: digestion, immune system function, energy levels, sleep regulation, vitamin absorption, mood, and even your brain function. Your gut is constantly sending signals to your brain around the overall start of your well-being which is why it's sometimes called your second brain. Second Brain Healthcare is designed for people to heal their guts from the comfort of the home, work, wherever.</p>
@@ -64,21 +79,21 @@ title: Second Brain Healthcare
 		<ul>
 			<li>
 				<div class="image-block">
-					<%= image_tag 'lifestyle/workout.jpg', alt: '' %>
+					<img alt="" src="images/lifestyle/workout.jpg" />
 				</div>
 				<h3>Diagnose</h3>
 				<p>Empowering you with answers and many of our patients have dealt with - doctors telling them everything is fine, misdiagnosis, etc. We understand that this is frustrating and our clinicians quickly identify underlying causes and hidden imbalances through at-home lab testing.</p>
 			</li>
 			<li>
 				<div class="image-block">
-					<%= image_tag 'lifestyle/outside.jpg', alt: '' %>
+					<img alt="" src="images/lifestyle/outside.jpg" />
 				</div>
 				<h3>Treat</h3>
 				<p>Our team of clinicians and nutritionists prescribe customized treatment plans made up of combination of medication, supplements, and nutritional plans that heal your gut.</p>
 			</li>
 			<li>
 				<div class="image-block">
-					<%= image_tag 'lifestyle/cooking.jpg', alt: '' %>
+					<img alt="" src="images/lifestyle/cooking.jpg" />
 				</div>
 				<h3>Support</h3>
 				<p>Your second brain is your gut. It is constantly sending signals to your brain around the overall state of your well-being. This primal connection impacts almost every facet of your health.  Gut health drives: digestion, immune system function, sleep regulation, vitamin absorption, mood, and even your brain function.</p>
@@ -95,27 +110,27 @@ title: Second Brain Healthcare
 
 			<ul>
 				<li>
-					<%= image_tag 'icons/symptoms.svg', alt: '' %>
+					<img alt="" src="images/icons/symptoms.svg" />
 					<p>Discuss your symptoms with your clinician</p>
 				</li>
 				<li>
-					<%= image_tag 'icons/testing.svg', alt: '' %>
+					<img alt="" src="images/icons/testing.svg" />
 					<p>At home lab testing -7-10 business day</p>
 				</li>
 				<li>
-					<%= image_tag 'icons/clinician.svg', alt: '' %>
+					<img alt="" src="images/icons/clinician.svg" />
 					<p>Review test results and custom treatment plan with clinician</p>
 				</li>
 				<li>
-					<%= image_tag 'icons/diet.svg', alt: '' %>
+					<img alt="" src="images/icons/diet.svg" />
 					<p>Review custom diet protocol with nutritionist</p>
 				</li>
 				<li>
-					<%= image_tag 'icons/heal.svg', alt: '' %>
+					<img alt="" src="images/icons/heal.svg" />
 					<p>Heal gut</p>
 				</li>
 				<li>
-					<%= image_tag 'icons/support.svg', alt: '' %>
+					<img alt="" src="images/icons/support.svg" />
 					<p>On-going nutritional support for keeping a healthy gut</p>
 				</li>
 			</ul>
@@ -132,7 +147,7 @@ title: Second Brain Healthcare
 			<ul class="accordion">
 			  <li>
 			    <a href="javascript:void(0)" class="js-accordion-trigger">
-			    	<%= image_tag 'icons/clinician.svg', alt: '' %>
+			    	<img alt="" src="images/icons/clinician.svg" />
 			    	<h3>Medical Director</h3>
 				</a>
 			    <div class="submenu wysiwyg-formatting">
@@ -170,3 +185,5 @@ $('.js-accordion-trigger').bind('click', function(e){
   e.preventDefault();
 });
 </script>
+  </body>
+</html>
