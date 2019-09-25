@@ -1,4 +1,4 @@
-# 39A Product: "Ladora"
+# Second Brain Healthcare
 
 ## Run Server
 ```bundle exec middleman server```
