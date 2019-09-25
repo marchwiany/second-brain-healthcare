@@ -1,0 +1,179 @@
+$star-height: 19.5px;
+$star-width: 100px;
+
+[class*=-stars]{
+  background: url('../images/utility-icons/stars.svg') no-repeat top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: sub;
+  height: $star-height;
+  width: $star-width;
+
+  &.zero-stars{
+    background-position: top;
+  }
+
+  &.half-stars{
+    background-position: 0px (-$star-height);
+  }
+
+  &.one-stars{
+    background-position: 0px (-$star-height*2);
+  }
+
+  &.one-and-half-stars{
+    background-position: 0px (-$star-height*3);
+  }
+
+  &.two-stars{
+    background-position: 0px (-$star-height*4);
+  }
+
+  &.two-and-half-stars{
+    background-position: 0px (-$star-height*5);
+  }
+
+  &.three-stars{
+    background-position: 0px (-$star-height*6);
+  }
+
+  &.three-and-half-stars{
+    background-position: 0px (-$star-height*7);
+  }
+
+  &.four-stars{
+    background-position: 0px (-$star-height*8);
+  }
+
+  &.four-and-half-stars{
+    background-position: 0px (-$star-height*9);
+  }
+
+  &.five-stars{
+    background-position: bottom;
+  }
+
+}
+
+//Small
+$small-star-height: 15.6px;
+$small-star-width: 80px;
+
+[class*=-stars].small{
+  background: url('../images/utility-icons/stars.svg') no-repeat top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: sub;
+  height: $small-star-height;
+  width: $small-star-width;
+
+  &.zero-stars{
+    background-position: top;
+  }
+
+  &.half-stars{
+    background-position: 0px (-$small-star-height);
+  }
+
+  &.one-stars{
+    background-position: 0px (-$small-star-height*2);
+  }
+
+  &.one-and-half-stars{
+    background-position: 0px (-$small-star-height*3);
+  }
+
+  &.two-stars{
+    background-position: 0px (-$small-star-height*4);
+  }
+
+  &.two-and-half-stars{
+    background-position: 0px (-$small-star-height*5);
+  }
+
+  &.three-stars{
+    background-position: 0px (-$small-star-height*6);
+  }
+
+  &.three-and-half-stars{
+    background-position: 0px (-$small-star-height*7);
+  }
+
+  &.four-stars{
+    background-position: 0px (-$small-star-height*8);
+  }
+
+  &.four-and-half-stars{
+    background-position: 0px (-$small-star-height*9);
+  }
+
+  &.five-stars{
+    background-position: bottom;
+  }
+
+}
+
+
+//Small
+$large-star-height: 29.25px;
+$large-star-width: 150px;
+
+[class*=-stars].large{
+  background: url('../images/utility-icons/stars.svg') no-repeat top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: sub;
+  height: $large-star-height;
+  width: $large-star-width;
+
+  &.zero-stars{
+    background-position: top;
+  }
+
+  &.half-stars{
+    background-position: 0px (-$large-star-height);
+  }
+
+  &.one-stars{
+    background-position: 0px (-$large-star-height*2);
+  }
+
+  &.one-and-half-stars{
+    background-position: 0px (-$large-star-height*3);
+  }
+
+  &.two-stars{
+    background-position: 0px (-$large-star-height*4);
+  }
+
+  &.two-and-half-stars{
+    background-position: 0px (-$large-star-height*5);
+  }
+
+  &.three-stars{
+    background-position: 0px (-$large-star-height*6);
+  }
+
+  &.three-and-half-stars{
+    background-position: 0px (-$large-star-height*7);
+  }
+
+  &.four-stars{
+    background-position: 0px (-$large-star-height*8);
+  }
+
+  &.four-and-half-stars{
+    background-position: 0px (-$large-star-height*9);
+  }
+
+  &.five-stars{
+    background-position: bottom;
+  }
+
+}

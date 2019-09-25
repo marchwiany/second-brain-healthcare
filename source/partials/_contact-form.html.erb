@@ -1,0 +1,83 @@
+<section class="contact-form-block-container">
+	<div class="card">
+		<div class="card-inner">
+			<header>
+				<span>Contact Us</span>
+				<h2>Questions? Reach Out!</h2>
+			</header>
+			<br/><br/>
+			<form>
+				<div class="row">	
+					<fieldset class="col-6">
+						<label>First Name</label>
+						<div class="input-wrapper">
+							<input type="text" />
+						</div>
+					</fieldset>
+					<fieldset class="col-6">
+						<label>Last Name</label>
+						<div class="input-wrapper">
+							<input type="text" />
+						</div>
+					</fieldset>
+				</div>
+				<div class="row">	
+					<fieldset class="col-6">
+						<label>Email</label>
+						<div class="input-wrapper">
+							<input type="email" />
+						</div>
+					</fieldset>
+					<fieldset class="col-6">
+						<label>Phone</label>
+						<div class="input-wrapper">
+							<input type="tel" />
+						</div>
+					</fieldset>
+				</div>
+				<div class="row">
+					<fieldset class="col-6">
+						<label>Location (Optional)</label>
+						<div class="input-wrapper">
+							<select name="">
+								<option value="">Select</option>
+							</select>
+						</div>
+					</fieldset>
+					<fieldset class="col-6">
+						<label>Unit # (Optional)</label>
+						<div class="input-wrapper">
+							<input type="tel" />
+						</div>
+					</fieldset>
+				</div>
+				<fieldset>
+					<label>How can we help?</label>
+					<div class="input-wrapper">
+						<textarea name="message" placeholder=""></textarea>
+					</div>
+				</fieldset>
+				<button class="button-primary">Send Message</button>
+			</form>
+		</div>
+		<div class="form-icons">
+			<ul>
+				<li>
+					<%= image_tag 'samples/circular-phone.svg', alt:'' %> 
+					<h3>Call Us</h3>
+					<p>1-800-457-5678</p>
+				</li>
+				<li>
+					<%= image_tag 'samples/circular-time.svg', alt:'' %> 
+					<h3>Call Center</h3>
+					<p>Mon-Fri: 8AM-7PM<br/>Sat-Sun: 9AM-5:30PM</p>
+				</li>
+				<li>
+					<%= image_tag 'samples/circular-email.svg', alt:'' %> 
+					<h3>Email Us</h3>
+					<p>contact@sroa.com</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

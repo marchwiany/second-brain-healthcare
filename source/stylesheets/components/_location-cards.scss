@@ -1,0 +1,302 @@
+.location-card{
+
+	&.card{
+		@include center;
+		max-width: 350px;
+
+		.image-block{
+			background-color: $grey-base;
+			height: 150px;
+			position: relative;
+
+			.trigger-gallery{
+				@include position(absolute, null 0px 0px null);
+				appearance: none;
+				background-color: rgba($black-base, 50%);
+				color: $white-base;
+				border: none;
+				@include s-medium;
+				cursor: pointer;
+
+				&:hover{
+
+				}
+
+				&:focus{
+					@include outline-light;
+				}
+			}
+
+			img{
+			    height: 100%;
+				object-fit: cover;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+			}
+		}
+
+		.text-block{
+			@include rem(padding, 20px);
+
+			.rating-stars{
+				@include rem(margin-top, 5px);
+			}
+
+			li{
+				@include rem(margin-top, 10px);	
+			}
+
+			img{
+				width: 15px;
+				@include rem(margin-right, 5px);
+				display: inline-block;
+				vertical-align: top;
+				max-height: 15px;
+			}
+
+
+			p{
+				display: inline-block;
+				line-height: 1.6;
+				margin: 0px;
+				@include rem(margin, -3px 0px 0px);
+				width: calc(100% - 25px);
+				vertical-align: top;
+
+				small{
+					@include s-small;
+					line-height: 1.5;
+				    display: block;
+				}
+			}
+
+			.button-primary, .button-secondary{
+				@include rem(margin-top, 10px);
+				width: 100%;
+			}
+		}
+	}
+
+}
+	.pricing{
+		@include position(absolute, null 20px 20px null);
+		text-align: right;
+
+		p{
+			background-color: rgba($green-base, 0.8);
+			color: $white-base;
+			@include rem(padding, 0px 5px);
+			margin: 0px;
+			@include s-small;
+			font-weight: $bold;
+			line-height: 1.8;
+			display: inline-block;
+		}
+
+		span{
+			background-color: rgba($white-base, 0.8);
+			@include rem(padding, 0px 6px);
+			@include s-big;
+			color: $black-base;
+			line-height: normal;
+			display: block;
+
+			small{
+				font-size: 60%;
+			}
+		}
+	}
+
+
+.location-block-container, .reserve-block-container{
+  @include grid-media($tablet){
+    @include grid-container;
+  }
+
+  h1{
+    @include s-medium;
+
+    @include grid-media($tablet){
+      @include s-large;
+    }
+  }
+
+  .location-preview-content{
+    display: flex;
+    @include rem(padding, 20px);
+    
+    @include grid-media($tablet){
+      align-items: center;
+    }
+  }
+
+  .location-card.card{
+    @include rem(margin, -30px -20px 0px);
+    max-width: inherit;
+    position: relative;
+    width: calc(100% + 47px);
+
+    @include grid-media($tablet){
+      @include rem(margin, -30px -30px 0px);
+      width: calc(100% + 69px);
+    }
+
+    .image-block{
+      height: 100px;
+      width: 210px;
+
+      @include grid-media($tablet){
+        width: 30%;
+        height: 130px;
+      }
+
+      img{
+        border-radius: 0px;
+      }
+    }
+
+    .text-block{
+      @include rem(padding, 0px 0px 0px 20px);
+      width: 100%;
+
+      @include grid-media($tablet-landscape){
+        @include rem(padding, 20px);
+      }
+
+      h2{
+        @include s-medium;
+
+        @include grid-media($tablet-landscape){
+          @include s-big;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.location-block-container{
+  .location-preview-content{
+    @include grid-media($tablet-landscape){
+      display: block;
+      @include rem(padding, 0px);
+    }
+  }
+
+  .location-card.card{
+    @include grid-media($tablet-landscape){
+      margin: 0px;
+      width: 100%;
+    }
+
+    .image-block{
+      @include grid-media($tablet){
+        width: 30%;
+        height: 130px;
+      }
+
+      @include grid-media($tablet-landscape){
+        height: 170px;
+        width: 100%;
+      }
+
+      img{
+        @include grid-media($tablet-landscape){
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+        }
+      }
+    }
+
+    .text-block{
+      @include rem(padding, 0px 0px 0px 20px);
+      width: 100%;
+
+      @include grid-media($tablet-landscape){
+        @include rem(padding, 20px);
+      }
+
+      h2{
+        @include s-medium;
+
+        @include grid-media($tablet-landscape){
+          @include s-big;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+//Nearby
+.nearby-block-container{
+	.slick-prev:before {
+	    content: "";
+	    background-image: url('../images/utility-icons/arrow-left.svg');
+	    background-size: 100%;
+	    height: 35px;
+	    width: 35px;
+	    display: block;
+	}
+
+	.slick-next:before {
+	    content: "";
+	    background-image: url('../images/utility-icons/arrow-right.svg');
+	    background-size: 100%;
+	    height: 35px;
+	    width: 35px;
+	    display: block;
+	}
+}
+
+//Available Units Layout
+.location-details{
+  @include grid-media($tablet-landscape){
+    @include grid-column(3.3);
+  }
+
+  .card.callout{
+    display: none;
+    @include rem(padding, 20px);
+
+    @include grid-media($tablet-landscape){
+      display: block;
+    }
+
+    .button-primary{
+      @include grid-media($tablet-landscape){
+        width: auto;
+      }
+    }
+  }
+}
+
+.location-content{
+  @include grid-media($tablet-landscape){
+    @include grid-shift(0.5);
+    @include grid-column(8.2);
+  }
+}
+
+//Map Location
+.map-toggle{
+	&:after{
+		content: "";
+		@include triangle("down", 3rem, 1rem, $white-base);
+		bottom: 0px;
+	    box-shadow: 0 9px 28px 0 rgba(0, 0, 0, 0.7);
+	    @include horizontal-center;
+	    height: 0.75rem;
+	    width: 0.75rem;
+	    z-index: -1;
+	}
+
+	&:before{
+		content:"";
+		bottom: -1rem;
+		box-shadow: 0 2px 20px 0 rgba(191, 191, 191, 0.5);
+		@include horizontal-center;
+		height: 1rem;
+		width: 3rem;
+	}
+}

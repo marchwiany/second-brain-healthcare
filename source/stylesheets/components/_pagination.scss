@@ -1,0 +1,72 @@
+.pagination{
+	display: table;
+	@include rem(margin, 20px auto 0px);
+	@include rem(padding, 2px 2px 3px 1px);
+
+	li{
+		float: left;
+		@include rem(margin, 0 4px 0 0);
+		@include s-small;
+		line-height: 2;
+
+		&:last-child{
+			margin: 0;
+		}
+
+		&.active a,
+		a:active {
+			background-color: $primary-base;
+			color: $white-base;
+			border-radius: 20em;
+		}
+
+		.delimeter{
+			display: block;
+			@include rem(padding-top, 6px);
+		}
+	}
+
+	a{
+		border-radius: 2px;
+		float: left;
+		height: 35px;
+		@include rem(padding, 4px 10px);
+		text-decoration: none;
+		text-align: center;
+		width: 35px;
+	}
+
+	.next a{
+		width: auto;
+
+		&:after{
+			background: url('../images/utility-icons/simple-right.svg') no-repeat;
+			background-position: top;
+			background-size: 100%;
+			content:"";
+			display: inline-block;
+			height: 16px;
+			transition: all 0.3s ease-in-out;
+			@include rem(margin-left, 10px);
+			width: 8px;
+			vertical-align: sub;
+			}
+		}
+
+	.prev a{
+		width: auto;
+
+		&:before{
+			background: url('../images/utility-icons/simple-left.svg') no-repeat;
+			background-position: top;
+			background-size: 100%;
+			content:"";
+			display: inline-block;
+			height: 16px;
+			transition: all 0.3s ease-in-out;
+			@include rem(margin-right, 10px);
+			width: 8px;
+			vertical-align: sub;
+		}
+	}
+}

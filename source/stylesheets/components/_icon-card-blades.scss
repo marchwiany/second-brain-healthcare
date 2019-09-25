@@ -1,0 +1,86 @@
+/*-----------------------
+Icon Card Blades
+-----------------------*/
+.icon-card-blades-wrapper{
+	background-color: $blue-grey-base;
+
+	.icon-card-blades-block-container{
+		max-width: 900px;
+
+		li{
+			@include rem(margin-top, 20px);
+			position: relative;
+
+			.card-inner{
+				@include rem(padding, 15px 20px);
+			}
+			
+			img{
+				background-color: $primary-base;
+				@include rem(padding, 15px);
+				//@include rem(margin, -30px 0px 0px);
+				width: 50px;
+				border-radius: 20em;
+				float: left;
+				@include rem(margin-right, 10px);
+
+				@include grid-media($tablet){
+					float: none;
+					width: 60px;
+					vertical-align: top;
+				}
+			}
+
+			p{
+				line-height: 1.8;
+				display: inline;
+				margin: 0px;
+
+				@include grid-media($tablet){
+					display: inline-block;
+					width: calc(100% - 80px);
+					@include rem(margin-top, 5px);
+				}
+			}
+		}
+	}
+}
+
+
+
+.text-with-card-block-container{
+	.text-block{
+		@include grid-media($tablet-landscape){
+			@include grid-column(8 of 12);
+		}
+	}
+
+	.card{
+		@include rem(padding, 30px);
+		@include grid-media($tablet-landscape){
+			@include grid-column(4 of 12);
+		}
+
+		header{
+			img{
+				display: inline-block;
+				@include rem(margin-right, 5px);
+				width: 30px;
+				vertical-align: top;
+			}
+
+			h3{
+				display: inline-block;
+				width: calc(100% - 45px);
+			}
+		}
+
+		ul{
+			li{
+				border-top: $grey-border;
+				@include rem(margin-top, 12px);
+				@include rem(padding-top, 12px);
+			}
+		}
+	}
+}

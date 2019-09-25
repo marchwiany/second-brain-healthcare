@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>support</title>
+    <desc>Created with Sketch.</desc>
+    <g id="support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(21.000000, 23.000000)" stroke="#4A4A4A" stroke-width="2">
+            <path d="M9.68106449,6.26692333 C5.59895665,9.66039306 3,14.7766871 3,20.5 C3,30.7172679 11.2827321,39 21.5,39 L21.5,39" id="Path"></path>
+            <polyline id="Path-10" transform="translate(8.015646, 7.507823) rotate(43.000000) translate(-8.015646, -7.507823) " points="1 11.0156464 8.01564636 4 15.0312927 11.0156464"></polyline>
+        </g>
+        <g id="Group-3-Copy" transform="translate(51.000000, 43.500000) rotate(-180.000000) translate(-51.000000, -43.500000) translate(40.000000, 24.000000)" stroke="#4A4A4A" stroke-width="2">
+            <path d="M9.68106449,6.26692333 C5.59895665,9.66039306 3,14.7766871 3,20.5 C3,30.7172679 11.2827321,39 21.5,39 L21.5,39" id="Path"></path>
+            <polyline id="Path-10" transform="translate(8.015646, 7.507823) rotate(43.000000) translate(-8.015646, -7.507823) " points="1 11.0156464 8.01564636 4 15.0312927 11.0156464"></polyline>
+        </g>
+    </g>
+</svg>

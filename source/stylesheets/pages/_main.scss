@@ -1,0 +1,685 @@
+body {
+  &.modal-open {
+    overflow: hidden;
+    // Prevent scroll on ios safari
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    // Prevent pull-to-refresh on ios chrome
+    overscroll-behavior-y: contain;
+  }
+}
+
+main {
+  position: relative;
+
+  &.main-content{
+    margin-top: $mobile-nav-height;
+
+    @include grid-media($tablet-landscape){
+      margin-top: $desktop-nav-height;
+    }
+  }
+} 
+
+[class*=-block-container]{
+  @include base-padding;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: block;
+  //width: calc(100% - 245px);
+}
+
+@keyframes fade-in{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@keyframes fade-out{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid $grey-light;
+}
+
+
+.colored-wrapper{
+  background-color: $blue-grey-base;
+
+  [class*=-block-container]{
+    @include small-padding;
+  }
+}
+
+/*-----------------------
+Card
+-----------------------*/
+// .card{
+//   background-color: $white-base;
+//   border-radius: 2px;
+//   border: $grey-border;
+//   @include rem(padding, 20px);
+
+//   @include grid-media($tablet){
+//     @include rem(padding, 40px);
+//   }
+
+//   &.adjust-padding{
+//     @include rem(padding, 3px 20px 20px);
+
+//     @include grid-media($tablet){
+//       @include rem(padding, 23px 40px 40px);
+//     }
+//   }
+// }
+
+
+/*-----------------------
+Content
+-----------------------*/
+.content{
+  display: inline-block;
+  animation: fade-in 0.5s ease-in;
+  margin-top: $mobile-nav-height;
+  position: relative;
+  width: 100%;
+
+  @include grid-media($tablet-landscape){
+    margin-top: $desktop-nav-height;
+  }
+
+  .header-content{
+    @include rem(padding, 0px);
+
+    @include grid-media($tablet){
+      @include rem(padding, 0px);
+    }
+  }
+
+
+ .header-block-container{
+    @include rem(padding, 12px 20px);
+
+    @include grid-media($tablet){
+      @include rem(padding, 20px 30px);
+    }
+
+    fieldset{
+      margin-bottom: 0px;
+
+      select{
+        background-color: $grey-light;
+      }
+    }
+  }
+
+  .content-block-container, .header-block-container{
+    display: block;
+    @include grid-container;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .content-block-container{
+    .card:not(:first-child){
+      @include rem(margin-top, 30px);
+    }
+  }
+
+  &.with-sidebar{
+    margin-left: 80px;
+    width: calc(100% - 80px);
+
+    .header-content{
+      //@include rem(padding, 12px 30px);
+      width: 100%;
+    }
+
+    .content-block-container{
+      width: 100%;
+
+      .card{
+        max-width: 850px;
+      }
+    }
+  }
+
+  &.centered{
+    margin-top: $desktop-nav-height;
+    padding: 20px;
+
+    .card{
+      @include center;
+      max-width: 600px;
+      @include rem(margin, 30px auto 20px);
+    }
+  }
+
+  &.no-sidebar{
+    margin-left: 0px;
+    width: 100%;
+
+    .card{
+      @include center;
+      max-width: 600px;
+    }
+  }
+}
+
+
+
+/*-----------------------
+Centered Block
+-----------------------*/
+
+.centered-block.card{
+  @include center;
+  max-width: 400px;
+  text-align: center;
+
+  img{
+    @include rem(margin-bottom, 10px);
+    max-width: 100px;
+  }
+}
+
+
+
+/*-----------------------
+Card with Header
+-----------------------*/
+.content.with-sidebar .content-block-container .card{
+  &.with-header{
+    max-width: 100%;
+  }
+}
+
+.with-stats{
+  .card-header{
+    margin-bottom: 25px;
+  }
+}
+
+.card{
+
+  h2{
+    @include s-bigger;
+
+    @include grid-media($tablet){
+      @include s-large;
+      line-height: 1.1
+    }
+  }
+
+  p{
+    line-height: 1.7;
+  }
+
+  &.with-header{
+    @include rem(padding, 0px);
+
+    .card-header{
+      border-bottom: 1px solid $grey-light;
+      @include rem(padding, 15px 20px);
+
+      h5{
+        margin-bottom: 0px;
+      }
+    }
+
+    .card-inner{
+      @include rem(padding, 20px);
+    }
+  }
+}
+
+
+.quick-filters{
+  position: relative;
+  @include rem(margin-bottom, 20px);
+
+  .button-filters{
+    display: flex;
+
+    @include grid-media($tablet){
+      display: inline-block;
+      width: calc(100% - 170px);
+    }
+
+    li{
+      display: inline-block;
+      width: calc(100%/5);
+      //width: calc(100%/5.3);
+      margin-right: 1%;
+
+      @include grid-media($tablet){
+        width: 100px;
+      }
+
+      button.toggle{
+        width: 100%;
+
+        &.is-active{
+          background-color: $blue-base;
+          color: $white-base;
+        }
+      }
+    }
+  }
+  
+  button.toggle{
+    @include rem(padding, 6px 0px);
+    @include s-tiny;
+  }
+
+  .button-grey-outline{
+    @include position(absolute, -45px 0px null null);
+    width: calc(100%/5.2);
+    border-color: darken(#E4E8F1, 10%);
+
+    @include grid-media($tablet){
+      position: relative;
+      float: right;
+      width: 150px;
+      top: auto;
+    }
+
+    img{
+      width: 15px;
+      vertical-align: middle;
+
+      @include grid-media($tablet){
+        @include rem(margin-right, 5px);
+      }
+    }
+
+    span{
+      display: none;
+
+      @include grid-media($tablet){
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.card{
+  .button-primary{
+    width: 100%;
+
+    @include grid-media($tablet){
+      width: 300px;
+    }
+  }
+}
+
+.blade{
+  background-color: $white-base;
+  box-shadow: 0 2px 4px 0 rgba(191,191,191,0.50);
+  border-radius: 4px;
+  @include rem(margin-top, 10px);
+  @include rem(padding, 10px 20px);
+
+  @include grid-media($tablet){
+    display: flex;
+    align-items: center;
+  }
+
+  img{
+    display: none;
+
+    @include grid-media($tablet){
+      display: inline-block;
+      @include rem(margin-right, 10px);
+      width: 75px;
+      vertical-align: top;
+    }
+  }
+
+  h2{
+    margin-bottom: 0px;
+    @include s-bigger;
+
+    strong{
+      font-weight: 800;
+    }
+  }
+
+  .text-block{
+    display: inline-block;
+
+    @include grid-media($tablet){
+      width: calc(100% - 412px);
+      @include rem(margin-right, 15px);
+    }
+
+    li{
+      @include grid-media($tablet){
+        display: inline-block;
+        @include rem(margin-right, 10px);
+      }
+
+      img{
+        @include rem(margin-right, 3px);
+        width: 16px;
+      }
+
+      img, p{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      p{
+        @include s-small;
+        line-height: normal;
+      }
+    }
+  }
+
+  .button-primary{
+    width: 100%;
+
+    @include grid-media($tablet){
+      width: 150px;
+    }
+  }
+
+  .button-block{
+    @include rem(margin-top, 10px);
+
+    @include grid-media($tablet){
+      @include rem(margin-top, 0px);
+      width: 170px;
+    }
+
+    p{
+      display: inline-block;
+      line-height: normal;
+      text-align: center;
+      width: 100%;
+      font-style: italic;
+      @include s-small;
+    }
+  }
+
+  .price{
+    text-align: right;
+    width: 115px;
+    display: inline-block;
+    vertical-align: top;
+
+    @include grid-media($tablet){
+      //display: inline-block;
+      @include rem(margin-right, 10px);
+      width: 120px;
+    }
+
+    h2{
+
+      small{
+        font-size: 50%;
+      }
+    }
+
+    p{
+      text-decoration: line-through;
+      @include s-small;
+      line-height: normal;
+    }
+  }
+}
+
+
+.wrapper{
+  background-color: #F4F5F8;
+}
+
+.card{
+  display: inline-block;
+  width: 100%;
+
+  & ~ .card{
+    @include rem(margin-top, 20px);
+  }
+
+  .trigger{
+    @include rem(margin-bottom, 20px);
+  }
+
+  &.expander{
+    padding-bottom: 0px;
+    border: none;
+
+    &.is-active{
+      .expanded-content{
+        display: block;
+
+        .trigger{
+          &:after{
+            content: "+";
+          }
+        }
+
+        .expanded-content{
+          display: none;
+        }
+      }
+    }
+
+    .expanded-content{
+      .is-active{
+        .expanded-content{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .card-inner{
+    @include rem(padding, 30px);
+
+    h2{
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.warn{
+  color: $red-base;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------
+Card with expander
+-----------------------*/
+
+.expander{
+  .expanded-content{
+    @include rem(margin-top, 20px);
+
+    .expander{
+      border: none;
+    }
+
+    .expanded-content{
+      @include rem(margin-top, 10px);
+    }
+
+
+    .trigger{
+      border-top: $grey-border;
+      @include rem(padding-top, 15px);
+      @include rem(margin-bottom, 10px);
+      @include s-big;
+
+      &:after{
+        background-color: $primary-base;
+        color: $white-base;
+        border-radius: 20em;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        float: left;
+        @include rem(margin-right, 10px);
+      }
+
+      span{
+        display: inline-block;
+        width: calc(100% - 44px);
+      }
+    }
+
+    .is-active{
+      .trigger{
+        &:after{
+          content: "–" !important;
+        }
+      }
+    }
+  }
+}
+
+
+.features{
+  @include rem(margin, 30px -30px -30px);
+  
+
+  li{
+    display: inline-block;
+    position: relative;
+    border-top: $grey-border;
+    width: 100%;
+    @include rem(padding, 15px 20px);
+
+    @include grid-media($tablet){
+      @include rem(padding, 0px);
+      text-align: center;
+      margin: 0px 0px -5px -5px;
+      height: 200px;
+      width: calc(100%/3);
+    }
+
+    &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5){
+      @include grid-media($tablet){
+        border-right: $grey-border;
+      }
+    }
+
+    &:nth-child(1), &:nth-child(4){
+      margin-left: 0px;
+    }
+
+    .inner{
+      @include grid-media($tablet){
+        @include vertical-center;
+        @include rem(padding, 10px);
+      }
+
+      button{
+        background-color: $red-base;
+        color: $white-base;
+        border-radius: 20em;
+        border: none;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        font-weight: bold;
+        @include font-type($primary-sans-serif, normal, normal);
+        @include s-base;
+        @include position(absolute, 20px 20px null null);
+
+        @include grid-media($tablet){
+          position: relative;
+          top: auto;
+          right: auto;
+        }
+      }
+    }
+
+    h3{
+      font-weight: bold;
+      @include s-base;
+      display: inline-block;
+
+      @include grid-media($tablet){
+        display: block;
+      }
+    }
+
+    p{
+      @include s-small;
+    }
+
+    img{
+      @include rem(margin-bottom, 5px);
+      @include rem(margin-right, 5px);
+      width: 20px;
+      vertical-align: middle;
+
+      @include grid-media($tablet){
+        @include rem(margin-right, 0px);
+      }
+    }
+  }
+
+  .toggle{
+    background-color: $primary-base;
+    @include rem(padding, 20px);
+    @include position(absolute, 0px 0px 0px 0px);
+    overflow: auto;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 2px;
+
+    li{
+      color: $white-base;
+      @include s-small;
+      border: none;
+      width: 100%;
+      height: auto;
+      @include rem(padding, 5px);
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+    }
+
+    button{
+      border-radius: 20em;
+      border: none;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      font-weight: bold;
+      @include font-type($primary-sans-serif, normal, normal);
+      @include s-base;
+      margin-top: 10px;
+    }
+  }
+}
+
+.expanded-content{
+  .wysiwyg-formatting, .faqs{
+    @include rem(margin-bottom, -20px);
+  }
+}

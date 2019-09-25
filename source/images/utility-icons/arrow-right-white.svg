@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-80.0%" y="-42.1%" width="260.0%" height="184.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Renting-a-Unit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gallery" transform="translate(-1151.000000, -395.000000)">
+            <g id="Group-3" transform="translate(1152.000000, 396.000000)">
+                <g id="arrow-copy" filter="url(#filter-1)" transform="translate(19.000000, 17.500000) rotate(-180.000000) translate(-19.000000, -17.500000) translate(14.000000, 8.000000)" fill="#FFFFFF">
+                    <polyline id="Path" points="8.58766234 18.6481481 0.357142857 9.5 8.58766234 0.351851852 9.64285714 1.36831276 2.46753247 9.5 9.64285714 17.6316872"></polyline>
+                </g>
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="0.7" cx="17.5" cy="17.5" r="17.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>clinician</title>
+    <desc>Created with Sketch.</desc>
+    <g id="clinician" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M46.1810723,23 L40.5900576,23 C39.8033141,27.1331422 39.8033141,30.8366012 40.5900576,34.110377 C42.0387176,40.1385017 45.1481997,44.1467596 49.5753807,43.9958822 C54.1335227,43.8405417 57.5365277,38.9985652 58.5607037,33.4979411 C59.1464321,30.3521231 59.1464321,26.8528094 58.5607037,23 L52.6407316,23" id="Path-11" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="Oval" stroke="#4A4A4A" stroke-width="2" cx="28.5" cy="42.5" r="3.5"></circle>
+        <path d="M49,44 L49,56.6803301 C48.1525015,61.56011 44.5617208,64 38.2276576,64 C30.5066292,64 28.3554372,58.8280631 28.1695704,56.157997 C27.9434765,52.910049 27.9434765,49.27494 28.1695704,45.2526701" id="Path-12" stroke="#4A4A4A" stroke-width="2"></path>
+    </g>
+</svg>

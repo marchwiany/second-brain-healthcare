@@ -1,0 +1,41 @@
+<div class="modal photo-gallery">
+  <div class="modal-fade-screen is-active">
+  	<div class="modal-close">×</div>
+    <div class="card modal-inner">
+      <div class="modal-content">
+        <div class="slider-for">
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+	   
+        </div>
+        <div class="slider-nav">
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+	        <%= image_tag 'samples/location-units.png', alt:'' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		 $('.slider-for').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: true,
+		  fade: true,
+		  asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+		  slidesToShow: 5,
+		  slidesToScroll: 1,
+		  asNavFor: '.slider-for',
+		  dots: false,
+		  arrows: false,
+		  focusOnSelect: true
+		});
+	});
+</script>

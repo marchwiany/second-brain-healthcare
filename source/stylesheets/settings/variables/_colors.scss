@@ -1,0 +1,48 @@
+//MAIN COLORS
+
+//BLACK
+$black-light:  #44525A;
+$black-base:   #4A4A4A;
+$black-dark:   #15191C;
+
+//GREEN
+$green-base:   #377D21;
+$green-light:  lighten($green-base, 65%);
+$green-dark:   darken($green-base, 10%);
+
+//GREY
+$grey-light:   #D6D6D6;
+$grey-base:    #A9A9A9;
+$grey-dark:    #767676;
+
+//RED
+$red-base:     #CE3138;
+$red-light:    lighten($red-base, 45%);
+$red-dark:     darken($red-base, 10%);
+
+//WHITE
+$white-base:   #FFFFFF;
+$white-dark:   #9B9B9B;
+
+//BLUE
+$blue-base:     #1B3C92;
+$blue-dark:     #0D1D48;   
+
+//BLUE-GREY
+$blue-grey-base:    #F4F5F8;
+$blue-grey-dark:    #E4E8F1;
+$blue-grey-darker:    darken($blue-grey-dark, 10%);
+
+
+//Main
+$pink-base:    #E8B9B9;
+$yellow-base:  #FAE24E;
+$blue-base:    #B9E4E8;
+
+//PRIMARY
+$primary-base: $blue-base;
+$primary-dark: $blue-dark;
+
+//SECONDARY
+$secondary-base: $red-base;
+$secondary-dark: $red-dark;

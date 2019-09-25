@@ -1,0 +1,63 @@
+/*-----------------------
+Location Bar
+-----------------------*/
+.location-bar{
+	background-color: $primary-base;
+	@include rem(padding, 20px 20px);
+	text-align: center;
+
+	h2, a{
+		color: $white-base;
+		@include s-small;
+
+		@include grid-media($tablet){
+			@include s-medium;
+		}
+	}
+
+	h2{
+		font-weight: $bold;
+		vertical-align: middle;
+	}
+
+	li{
+		display: inline-block;
+
+		&:not(:last-child):after{
+			border-right: $white-border;
+			content:"";
+			display: inline-block;
+			color: $white-base;
+			height: 14px;
+			vertical-align: middle;
+			@include rem(margin, 0px 6px);
+
+			@include grid-media($tablet){
+				@include rem(margin, 0px 10px);
+			}
+		}
+
+		a{
+			font-weight: $regular;
+			text-decoration: none;
+			vertical-align: middle;
+
+			&:focus {
+			  @include outline-light;
+			}
+		}
+	}
+
+	ul, h2{
+		@include grid-media($tablet){
+			display: inline-block;
+			margin: 0px;
+		}
+	}
+
+	ul{
+		@include grid-media($tablet){
+			@include rem(margin-left, 10px);
+		}
+	}
+}

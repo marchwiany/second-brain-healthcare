@@ -1,0 +1,88 @@
+/*-----------------------
+Filter Block
+-----------------------*/
+.filters{
+	background-color: $primary-base;
+	display: inline-block;
+	@include rem(padding, 20px);
+	width: 100%;
+
+	@include grid-media($tablet){
+		@include rem(padding, 20px 30px);
+	}
+
+	fieldset{
+		@include rem(margin-bottom, 5px);
+		@include grid-media($tablet){
+			@include grid-column(4 of 12);
+			margin-bottom: 0px;
+		}
+
+		select{
+			@include rem(padding, 15px 25px 15px 15px);
+		}
+
+		&.search-with-button{
+			input{
+				@include rem(padding, 15px 35px 15px 15px);
+			}
+
+			button{
+				@include position(absolute, 18px 18px null null);
+			}
+		}
+	}
+
+	 .custom-dropdown{
+	 	display: inline-block;
+	 	margin-bottom: 0px;
+	 	width: 49%;
+
+	 	@include grid-media($tablet){
+	 		@include grid-column(4 of 12);
+	 	}
+
+	 	button{
+ 		 	@include rem(padding, 15px 25px 15px 15px);
+ 		 }
+	 }
+}
+
+/*-----------------------
+Filters Applied
+-----------------------*/
+.filters-applied{
+	border-bottom: $grey-border;
+
+	.inner{
+		@include rem(padding, 7px 20px 5px);
+		@include center;
+		max-width: 900px;
+
+		@include grid-media($tablet){
+			@include rem(padding, 7px 30px 5px);
+		}
+	}
+
+	h2{
+		font-weight: bold;
+		display: inline-block;
+		@include s-base;
+		margin-bottom: 0px;
+	}
+
+	ul, li{
+		display: inline-block;
+	}
+
+	.link-primary{
+		font-weight: normal;
+		@include rem(margin, 0px 0px 0px 10px);
+		background-color: transparent;
+
+		span{
+			@include s-bigger;
+			vertical-align: middle;
+		}
+	}
+}

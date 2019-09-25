@@ -1,0 +1,695 @@
+/*-----------------------
+Fieldset
+-----------------------*/
+fieldset{
+  display: inline-block;
+  @include rem(margin-bottom, 18px);
+  position: relative;
+  width: 100%;
+}
+
+/*-----------------------
+Labels
+-----------------------*/
+label{
+  color: $black-base;
+  display: inline-block;
+  @include font-type($primary-sans-serif, normal, $bold);
+  @include s-base;
+  @include rem(margin-bottom, 6px);
+  text-align: left;
+
+  i{
+    font-style: italic;
+    font-weight: $regular;
+  }
+}
+
+/*-----------------------
+Inputs
+-----------------------*/
+#{$all-text-inputs},
+select,
+textarea{
+  background-color: $white-base;
+  border: 1px solid $grey-light;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  transition: all 0.3s ease-in-out;
+  @include font-type($primary-sans-serif, normal, 400);
+  @include s-base;
+  @include rem(padding, 8px 10px);
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  &::placeholder{
+    color: $white-dark;
+    font-style: italic;
+  }
+
+  &:focus{
+    border-color: $black-dark;
+    outline: none;
+  }
+}
+
+/*-----------------------
+Hidden Input
+-----------------------*/
+.hidden-field{
+  height: 0px;
+  width: 0px;
+}
+
+// Cypress does not provide a way (or I couldn't find it)
+// to set the value of a hidden input. This is to `hide`
+// the input with type="text"
+.really.hidden-field{
+  input{
+    padding: 0px;
+    border: none;
+  }
+}
+
+/*-----------------------
+Input Icon
+-----------------------*/
+.icon-label{
+  position: relative;
+  input{
+    @include rem(padding-left, 30px);
+  }
+
+  i{
+    @include position(absolute, 12px null null 10px);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    height: 20px;
+    width: 20px;
+  }
+
+  // .twitter-icon{
+  //   background-image: asset-url("twitter.svg");
+  // }
+  // .linkedin-icon{
+  //   background-image: asset-url("linkedin.svg");
+  // }
+  // .web-icon{
+  //   background-image: asset-url("web.svg");
+  // }
+  // .calendar-icon{
+  //   background-image: asset-url("calendar.svg");
+  //   @include position(absolute, 14px null null 10px);
+  //   z-index: 2;
+  // }
+}
+
+/*-----------------------
+Search
+-----------------------*/
+.search-with-button{
+  position: relative;
+  
+  input{
+    @include rem(padding-right, 30px);
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    @include position(absolute, 10px 10px null null);
+    width: 20px;
+    cursor: pointer;
+
+    &:focus{
+      @include outline-dark;
+    }
+  }
+}
+
+.search{
+  position: relative;
+  
+  input{
+    @include rem(padding-left, 30px);
+    background-image: url('../images/utility-icons/search.svg');
+    background-position: left 10px top 50%;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+/*-----------------------
+Textarea
+-----------------------*/
+textarea,
+textarea[type="text"]{
+  height: 100px;
+  resize: vertical;
+}
+
+.with-character-count{
+  label{
+    @include rem(padding-right, 108px);
+  }
+
+  .character-count{
+    color: $black-base;
+    float: right;
+    @include position(absolute, 0px 0px null null);
+    @include s-small;
+  }
+}
+
+
+/*-----------------------
+Select
+-----------------------*/
+select{
+  background-image: url('../images/utility-icons/arrows.svg');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  cursor: pointer;
+  @include rem(padding-right, 32px);
+  text-overflow: ellipsis;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  option:disabled{
+    color: $grey-light;
+    font-style: italic;
+  }
+}
+
+
+/*-----------------------
+Checkbox
+-----------------------*/
+.checkbox{
+  //@include rem(margin-top, 15px);
+  width: 100%;
+
+  label{
+    cursor: pointer;
+    float: right;
+    @include rem(margin, 2px 0px 0px);
+    line-height: normal;
+    width: calc(100% - 32px);
+  }
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  transition: all 0.3s ease-in-out;
+  background-color: $white-base;
+  border: 1px solid $grey-light;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  @include rem(height, 20px);
+  @include rem(width, 20px);
+  outline: none;
+  display: inline-block;
+  @include rem(margin, 0px 8px 0px 0px);
+
+  &:focus{
+    border-color: $black-base;
+    outline: none;
+  }
+
+  &:checked{
+    &:after{
+      background-image: url('../images/utility-icons/checkmark.svg');
+      background-size: 17px;
+      color: $black-base;
+      content: '';
+      display: block;
+      height: 16px;
+      transition: all 0.2s ease-in;
+      @include position(absolute, 3px null null 2px);
+      text-align: center;
+      width: 17px;
+      -webkit-position: absolute;
+      -webkit-z-index: 3;
+    }
+  }
+}
+
+
+/*-----------------------
+Error
+-----------------------*/
+.error{
+  input, textarea, select{
+    border: 1px solid $red-base;
+
+    &:focus{
+      border-color: $black-base;
+      outline: none;
+    }
+  }
+}
+
+.error-message{
+  color: $red-base;
+  display: inline-block;
+  @include rem(margin-top, 4px);
+  @include s-tiny;
+  transition: all 0.3s ease-in-out;
+  &:first-letter{
+    text-transform: capitalize;
+  }
+}
+
+
+/*-----------------------
+Input Tooltip
+-----------------------*/
+.tooltip-trigger:after{
+  background-color: $grey-light;
+  border: 1px solid $grey-base;
+  border-radius: 50%;
+  color: $grey-base;
+  content:"?";
+  cursor: pointer;
+  display: inline-block;
+  height: 18px;
+  font-size: 12px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 1.4;
+  vertical-align: text-top;
+  width: 18px;
+}
+
+.tooltip-content{
+  display: none;
+  @include rem(margin-bottom, 8px);
+
+  p{
+    line-height: 1.5;
+  }
+
+  &.is-active{ display: block; }
+}
+
+
+/*-----------------------
+Uploader
+-----------------------*/
+.fileupload{
+
+  .thumbnail{
+    display: inline-block;
+    @include rem(margin-right, 15px);
+    width: 70px;
+    vertical-align: middle;
+
+    img{
+      border-radius: 50%;
+      height: 70px;
+    }
+  }
+
+  .button-secondary-light{
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    background-color: $grey-light;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+      background-color: darken($grey-light, 8%);
+    }
+  }
+
+  .button-secondary-light>input{
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0;
+    opacity:0;
+    filter:alpha(opacity=0);
+    transform:translate(-300px, 0) scale(4);
+    cursor: pointer;
+  }
+}
+
+.fileupload-exists .fileupload-new,.fileupload-new .fileupload-exists{
+  display: none;
+}
+
+.fileupload-preview{
+  @include rem(margin, 0px 10px);
+  @include s-tiny;
+  color: $grey-base
+}
+
+.close{
+  text-decoration: none;
+  vertical-align: text-bottom;
+}
+
+
+/*-----------------------
+Date Picker
+-----------------------*/
+.react-datepicker__input-container{
+  width: 100%;
+}
+
+
+/*-----------------------
+Button Area
+-----------------------*/
+.button-area{
+  //@include rem(margin-top, 20px);
+
+  button{
+    width: 100%;
+
+    @include grid-media($tablet){
+      width: inherit;
+    }
+  }
+
+  a{
+    display: inline-block;
+    @include rem(margin-top, 20px);
+    text-align: center;
+    width: 100%;
+
+    @include grid-media($tablet){
+      @include rem(margin-top, 10px);
+      float: right;
+      width: inherit;
+    }
+  }
+}
+
+
+/*-----------------------
+Forms
+-----------------------*/
+form{
+  .row{
+    margin-bottom: 0px;
+  }
+}
+
+
+/*-----------------------
+Radio Buttons
+-----------------------*/
+.radio-buttons{
+  display: block;
+  width: 100%;
+
+  .label-input{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .input-wrapper .row{
+    display: block;
+    margin-bottom: 0px;
+      @include grid-container;
+      @include grid-collapse;
+
+    input[type="radio"]{ 
+      position: absolute;
+      z-index: -1;
+    }
+
+    input[type="radio"]:focus ~ span{
+      border-color: $black-dark;
+    } 
+
+    label.radio-button{
+      background-color: $white-base;     
+      border-radius: 3px;
+      display: inline-block;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      @include grid-column(6 of 12);
+    }
+
+    span{
+      background: $white-base;
+      color: $black-base;
+      cursor: pointer;
+      display: block;
+      @include s-base;
+      font-weight: bold;
+      padding: 15px;
+      width: 100%;
+      border: 1px solid $grey-light;
+      border-radius: 4px;
+
+      &:hover{
+        background-color: lighten($grey-light, 10%);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    input:checked + span{
+      background-color: lighten($grey-light, 10%);
+    }
+  }
+}
+
+/*-----------------------
+Radio Inputs
+-----------------------*/
+.radio-inputs{
+  //@include rem(margin-top, 15px);
+  width: 100%;
+
+  label{
+    cursor: pointer;
+    line-height: normal;
+    display: block;
+  }
+
+  span{
+    display: inline-block;
+    @include rem(margin-top, 3px);
+    width: calc(100% - 32px);
+  }
+
+  input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    background-color: $white-base;
+    border: 1px solid $grey-light;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    @include rem(height, 20px);
+    @include rem(width, 20px);
+    outline: none;
+    display: inline-block;
+    @include rem(margin, 0px 8px 0px 0px);
+    border-radius: 20em;
+    vertical-align: top;
+
+    &:focus{
+      border-color: $black-base;
+      outline: none;
+    }
+
+    &:checked{
+      position: relative;
+      &:after{
+        background-color: $black-base;
+        color: $black-base;
+        content: '';
+        display: block;
+        height: 14.5px;
+        transition: all 0.2s ease-in;
+        text-align: center;
+        width: 14.5px;
+        -webkit-position: absolute;
+        -webkit-z-index: 3;
+        border-radius: 20em;
+        @include vertical-horizontal-center;
+      }
+    }
+  }
+}
+
+/*-----------------------
+Stars
+-----------------------*/
+#star_rating svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  stroke: currentColor;
+}
+#star_rating label, #star_rating output {
+  display: block;
+  float: left;
+  font-size: 2em;
+  height: 1.2em;
+  color: $yellow-base;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+#star_rating output {
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+#star_rating input:checked ~ label {
+  color: $blue-grey-base;
+}
+#star_rating input:checked + label {
+  color: $yellow-base;
+//  border-bottom-color: $yellow-base;
+}
+
+#star_rating:hover input + label {
+  color: $yellow-base;
+}
+#star_rating input:hover ~ label,
+#star_rating input:focus ~ label,
+#star_rating input[id="star0"] + label {
+  color: #999;
+}
+#star_rating input:hover + label,
+#star_rating input:focus + label {
+  color: $yellow-base;
+}
+#star_rating input[id="star0"]:checked + label {
+  color: $blue-grey-base;
+}
+#star_rating [type="submit"] {
+  float: none;
+}
+
+.visuallyhidden{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*-----------------------
+Card Edit
+-----------------------*/
+.card-edit{
+  border-top: $grey-border;
+  border-bottom: $grey-border;
+  @include rem(margin-bottom, 20px);
+  @include rem(padding, 20px 0px);
+
+  @include grid-media($tablet){
+    display: flex;
+    align-items: center;
+  }
+
+  img{
+    display: inline-block;
+    width: 40px;
+  }
+
+  p{
+    margin-bottom: 0px;
+    line-height: normal;
+
+    small{
+      font-size: 80%;
+    }
+  }
+
+  .text-block{
+    @include rem(padding, 0px 20px);
+    display: inline-block;
+
+    @include grid-media($tablet){
+      width: calc(100% - 240px);
+    } 
+  }
+
+  button{
+    @include rem(margin-top, 10px);
+    width: 100%;
+
+    @include grid-media($tablet){
+      @include rem(margin-top, 0px);
+      width: 200px;
+    }
+  }
+}
+
+/*-----------------------
+Custom Select
+-----------------------*/
+.custom-dropdown{
+  button{
+    background-image: url('../images/utility-icons/arrow-down.svg');
+    background-position: right 22px top 50%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    @include rem(padding-right, 32px);
+    width: 100% !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    @include font-type($primary-sans-serif, normal, 400);
+    @include s-base;
+    appearance: none;
+    text-align: left;
+    background-color: $white-base;
+  }
+
+  .dropdown{
+    background-color: $white-base;
+    @include position(absolute, 58px null null 0px);
+    width: 150%;
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: none;
+
+    @include grid-media($tablet){
+      width: 100%;
+    }
+
+    &.is-active{
+      display: block;
+    }
+
+    .checkbox{
+      @include rem(padding, 10px 20px 5px);
+      margin: 0px;
+      width: 100%;
+      border-bottom: $grey-border;
+
+      input{
+        padding: 0px;
+        box-shadow: none;
+      }
+    }
+  }
+}

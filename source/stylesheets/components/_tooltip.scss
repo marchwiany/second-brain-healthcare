@@ -1,0 +1,111 @@
+/*-----------------------
+Tooltip
+-----------------------*/
+
+.tooltip-block{
+  z-index: 99;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-item {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $tooltip-background: $white-base;
+  $tooltip-background: #313839;
+  $tooltip-color: $base-font-color;
+  $tooltip-arrow-width: 8px;
+  $tooltip-shadow: 0 2px 2px silver;
+  $tooltip-distance-from-item: 45px;
+  $tooltip-arrow-distance-from-box: -1.3em;
+
+  width: auto;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+  border-radius: 20em;
+  border: 1px solid $blue-base;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4;
+  color: $blue-base;
+
+  &:focus,
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tooltip {
+    @include position(absolute, null -60px $tooltip-distance-from-item 0);
+    background-color: lighten($grey-light, 10%);
+    border-radius: $base-border-radius;
+    box-shadow: $tooltip-shadow;
+    box-shadow: 0 0 20px 0 rgba(36,36,36,0.25);
+    color: $black-base;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 20px;
+    transition: all .3s ease-in-out;
+    text-align: left;
+    width: 300px;
+    visibility: hidden;
+    z-index: 10;
+    margin-right: -85px;
+
+    p {
+      line-height: 1.5em;
+      margin: 0;
+      font-size: 12px;
+      display: inline-block;
+      width: 100% !important;
+      position: relative !important;
+      transform: none !important;
+    }
+
+    table{    
+      table-layout: auto;
+
+      tr{
+        background-color: lighten($grey-light, 10%);
+        border: none;
+
+        &.highlight{
+          background-color: $grey-light;
+        }
+
+        td{
+          border: none;
+          @include s-base;
+          white-space: normal;
+          @include rem(padding, 5px);
+          font-weight: normal;
+
+          &.align-right{
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    &::after {
+      @include position(absolute, null 0);
+      border: $tooltip-arrow-width solid transparent;
+      bottom: $tooltip-arrow-distance-from-box;
+      color: lighten($grey-light, 10%);
+      content: "▼";
+      font-size: 1.4em;
+      margin-top: -5px;
+      margin-left: -$tooltip-arrow-width;
+      text-align: center;
+      text-shadow: $tooltip-shadow;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/*-----------------------
+Callout
+-----------------------*/
+.callout-wrapper{
+	background-color: $blue-grey-base;
+
+	.callout-block-container{
+		text-align: center;
+
+		@include grid-media($tablet){
+			display: flex;
+			align-items: center;
+			text-align: left;
+		}
+
+		img{
+			@include rem(margin-bottom, 20px);
+			width: 250px;
+
+			@include grid-media($tablet){
+				@include rem(margin-bottom, 0px);
+			}
+		}
+
+		.text-block{
+			width: 100%;
+		}
+
+		img ~ .text-block{
+			@include grid-media($tablet){
+				margin-left: 10%;
+			}
+		}
+	}
+}
+
+/*-----------------------
+Card Callout
+-----------------------*/
+.card.callout{
+	text-align: center;
+
+	img{
+		@include rem(margin-bottom, 20px);
+		width: 150px;
+	}
+
+	h2{
+		@include s-bigger;
+	}
+}

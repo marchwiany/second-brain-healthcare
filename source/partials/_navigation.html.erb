@@ -1,0 +1,54 @@
+<div class="navigation"> <!-- toggle is-active on mobile to show menu-->
+	<a href="" class="logo">
+		<%= image_tag 'logo.png' %>
+	</a>
+	<ul class="mobile-menu">
+		<a href=""><%= image_tag 'utility-icons/phone.svg', alt:'' %></a>
+		<a href=""><%= image_tag 'utility-icons/search.svg', alt:'' %></a>
+		<button class="menu-trigger"><%= image_tag 'utility-icons/menu.svg', alt:'' %></button>
+	</ul>
+	<div class="nav-wrapper">
+		<button class="modal-close">×</button>
+		<nav>
+			<ul role="menu">
+				<li>
+					<a href="" role="menuitem">Find Storage</a>
+				</li>
+				<li>
+					<a href="" role="menuitem">Size Guide</a>
+				</li>
+				<li class="has-submenu"> <!-- toggle is-active on mobile to show submenu items -->
+					<a href="" aria-haspopup="true" aria-expanded="false" class="trigger">Storage Resources</a>
+					<ul>
+						<li><a href="">Storage Calculator</a></li>
+						<li><a href="">Vehicle Storage</a></li>
+						<li><a href="">Moving Truck Rental</a></li>
+						<li><a href="">Moving & Packing Supplies</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+				</li>
+				<li class="has-submenu">
+					<a href="" aria-haspopup="true" aria-expanded="false" class="trigger">About Us</a>
+					<ul>
+						<li><a href="">Storage Experts</a></li>
+						<li><a href="">Investor Relations</a></li>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<ul class="action-links">
+			<li>
+				<a href="">
+					<%= image_tag 'utility-icons/phone-colored.svg', alt:'' %>
+					1-800-457-5678
+				</a>
+			</li>
+			<li>
+				<a href="" class="button-primary">Pay Your Bill</a>
+			</li>
+		</ul>
+		<a href="" class="button-light mobile-button">Pay Your Bill</a>
+	</div>
+</div>

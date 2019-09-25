@@ -1,0 +1,66 @@
+.text-block-container{
+	max-width: 1000px !important;
+}
+
+.wysiwyg-formatting{
+  p{
+    @include rem(margin-bottom, 20px);
+  }
+
+  img{
+    height: inherit;
+  }
+
+  ul, ol{
+    @include rem(margin-bottom, 20px);
+
+    li{
+      @include font-type($primary-sans-serif, normal, normal);
+      @include rem(margin-left, 15px);
+      list-style-type: disc;
+      @include rem(margin-top, 5px);
+      line-height: 1.8;
+
+      p{
+        margin: 0px;
+      }
+    }
+  }
+
+  ol{
+    li{
+      list-style-type: decimal;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    a{
+      font-weight: bold;
+    }
+  }
+
+  strong{
+    font-weight: bold;
+  }
+
+  blockquote{
+    border-left: 4px solid $blue-base;
+    @include rem(padding-left, 10px);
+    @include rem(margin-bottom, 20px);
+    font-style: italic;
+    @include s-big;
+
+    @include grid-media($tablet){
+      @include rem(padding-left, 30px);
+    }
+
+    p{
+      font-style: italic;
+      @include s-big;
+    }
+
+    &:before{
+      display: none;
+    }
+  }
+}

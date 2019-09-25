@@ -1,0 +1,156 @@
+/*-----------------------
+Text on Image Block
+-----------------------*/
+.text-on-image-block{
+	background-color: $black-base;
+	background-size: cover !important;
+	text-align: center;
+	@include rem(padding, 20px);
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+
+	@include grid-media($tablet){
+		@include rem(padding, 40px);
+		height: 450px;
+		text-align: left;
+	}
+
+	&:after{
+		content:"";
+		opacity: 0.6;
+		background-color: rgba($black-dark, 60%);
+		@include position(absolute, 0px 0px 0px 0px);
+		z-index: -1;
+
+		@include grid-media($tablet){
+			background-color: transparent;
+			background-image: linear-gradient(-57deg, rgba(0,0,0,0.00) 0%, #000000 70%);
+		}
+	}
+
+	&:not(:first-child){
+		border-top: $white-border;
+
+		@include grid-media($tablet){
+			border: none;
+		}
+	}
+
+	.text-on-image-block-inner{
+		height: 100%;
+	}
+
+	.text-block{
+		@include grid-media($tablet){
+		    height: 85%;
+		}
+	}
+
+	h2, p{
+		color: $white-base;
+		text-shadow: 0 2px 4px rgba(0,0,0,1);
+	}
+
+	.button-secondary{
+		@include rem(margin-top, 20px);
+		
+		@include grid-media($tablet){
+			margin-top: 0px;
+		}
+	}
+}
+
+.one-column{
+	
+	.text-on-image-block{
+		&:after{
+			@include grid-media($tablet){
+				background-image: linear-gradient(-57deg, rgba(0,0,0,0.00) 0%, #000000 30%);
+			}
+		}
+
+		.text-block{
+			height: auto;
+		}
+
+		.text-on-image-block-inner{
+			@include grid-media($tablet){
+				@include vertical-center;
+				height: auto;
+			}
+		}
+
+		p{
+			font-size: 16px;
+			line-height: 1.4;
+			max-width: 500px;
+
+			@include grid-media($tablet){	
+				@include s-medium;
+				line-height: 1.5;
+			}
+		}
+
+		.button-secondary{
+			@include rem(margin-top, 20px);
+		}
+	}
+}
+
+.two-columns{
+	.text-on-image-block{
+		@include grid-media($tablet){
+			@include rem(padding, 60px);
+		}
+
+		p{
+			font-size: 16px;
+			line-height: 1.4;
+			max-width: 500px;
+
+			@include grid-media($tablet){	
+				@include s-medium;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+.two-columns, .three-columns{
+	.text-on-image-block{
+		@include grid-media($tablet){
+			width: 50%;
+		}
+
+		&:not(:last-child){
+			@include grid-media($tablet){
+				margin-right: -4.4px;
+			}	
+		}
+
+		&:not(:first-child){
+			@include grid-media($tablet){
+				border-left: $white-border;
+			}
+		}
+	}
+}
+
+.three-columns{
+	.text-on-image-block{
+		@include grid-media($tablet){
+			height: 320px;
+			width: calc(100%/3);
+		}
+
+		p{
+			line-height: 1.6;
+		}
+	}
+}
+
+.text-on-image ~ .text-on-image{
+	border-top: $white-border;
+}

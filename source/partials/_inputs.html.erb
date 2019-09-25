@@ -1,0 +1,280 @@
+<table class="styleguide-table inputs">
+	<thead>
+		<tr>
+			<th>Type</th>
+			<th>Default</th>
+			<th>Filled</th>
+			<th>Error</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><h3>Text</h3></td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<input type="text" name="" placeholder="Placeholder Text" />
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<input type="text" name="" placeholder="Placeholder Text" value="John Smith" />
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="error">
+					<label>Label</label>
+					<div class="input-wrapper">
+						<input type="text" name="" placeholder="Placeholder Text" />
+					</div>
+					<span class="error-message">Label can't be blank</span>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Textarea</h3></td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<textarea name="message" placeholder="Placeholder Text"></textarea>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<textarea name="message" placeholder="Placeholder Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin vel sit amet, consectetur adipiscing elit.</textarea>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="error">
+					<label>Label</label>
+					<div class="input-wrapper">
+						<textarea name="message" placeholder="Placeholder Text"></textarea>
+					</div>
+					<span class="error-message">Label can't be blank</span>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Select</h3></td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<select name="time">
+							<option value="select">Select</option>
+							<option value="afternoon">Option 1</option>
+							<option value="evening">Option 2</option>
+						</select>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset>
+					<label>Label</label>
+					<div class="input-wrapper">
+						<select name="time">
+							<option value="select" disabled>Select</option>
+							<option value="afternoon">Option 1</option>
+							<option value="evening">Option 2</option>
+						</select>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="error">
+					<label>Label</label>
+					<div class="input-wrapper">
+						<select name="time">
+							<option value="select">Select</option>
+							<option value="afternoon">Option 1</option>
+							<option value="evening">Option 2</option>
+						</select>
+					</div>
+					<span class="error-message">Label can't be blank</span>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Checkbox</h3></td>
+			<td>
+				<fieldset class="checkbox">
+					<div class="input-wrapper">
+						<input type="checkbox" id="checkbox1" value="true" />
+						<label for="checkbox1">Checkbox label</label>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="checkbox">
+					<div class="input-wrapper">
+						<input type="checkbox" id="checkbox2" checked="checked" value="true" />
+						<label for="checkbox2">Checkbox label</label>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="checkbox error">
+					<div class="input-wrapper">
+						<input type="checkbox" id="checkbox3" value="true" />
+						<label for="checkbox3">Checkbox label</label>
+					</div>
+					<span class="error-message">Label can't be blank</span>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Radio</h3></td>
+			<td>
+				<fieldset class="radio-inputs">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<label class="radio-input">
+							<input type="radio" value="true" name="radio-name1" /><span>Yes <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+						<label class="radio-input">
+							<input type="radio" value="false" name="radio-name1" /><span>No <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="radio-inputs">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<label class="radio-input">
+							<input type="radio" value="true" name="radio-name2" checked="checked" /><span>Yes <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+						<label class="radio-input">
+							<input type="radio" value="false" name="radio-name2" /><span>No <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="radio-inputs error">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<label class="radio-input">
+							<input type="radio" value="true" name="radio-name3" /><span>Yes <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+						<label class="radio-input">
+							<input type="radio" value="false" name="radio-name3" /><span>No <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+						</label>
+						<span class="error-message">Label can't be blank</span>
+					</div>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Radio Buttons</h3></td>
+			<td>
+				<fieldset class="radio-buttons">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<div class="row">
+							<label class="radio-button">
+								<input type="radio" value="true" name="radio-name4" /><span>Yes</span>
+							</label>
+							<label class="radio-button">
+								<input type="radio" value="false" name="radio-name4" /><span>No</span>
+							</label>
+						</div>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="radio-buttons">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<div class="row">
+							<label class="radio-button">
+								<input type="radio" value="true" name="radio-name5" checked="checked" /><span>Yes</span>
+							</label>
+							<label class="radio-button">
+								<input type="radio" value="false" name="radio-name5" /><span>No</span>
+							</label>
+						</div>
+					</div>
+				</fieldset>
+			</td>
+			<td>
+				<fieldset class="radio-buttons error">
+					<label class="label-input" for="radio-name">Label</label>
+					<div class="input-wrapper">
+						<div class="row">
+							<label class="radio-button">
+								<input type="radio" value="true" name="radio-name6" /><span>Yes</span>
+							</label>
+							<label class="radio-button">
+								<input type="radio" value="false" name="radio-name6" /><span>No</span>
+							</label>
+						</div>
+						<span class="error-message">Label can't be blank</span>
+					</div>
+				</fieldset>
+			</td> 
+		</tr>
+		<tr>
+			<td><h3>Stars</h3></td>
+			<td>
+				<fieldset class="stars">
+					<label>Label</label>
+					<div class="input-wrapper" id="star_rating">
+
+						<input value="1" id="star1"
+							type="radio" name="rating" class="visuallyhidden">
+						<label for="star1">
+							<span class="visuallyhidden">1 Star</span>
+							<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+						</label>
+
+						<input value="2" id="star2"
+							type="radio" name="rating" class="visuallyhidden">
+						<label for="star2">
+							<span class="visuallyhidden">2 Stars</span>
+									<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+						</label>
+
+						<input value="3" id="star3"
+							type="radio" name="rating" class="visuallyhidden">
+						<label for="star3">
+							<span class="visuallyhidden">3 Stars</span>
+									<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+						</label>
+
+						<input value="4" id="star4"
+							type="radio" name="rating" class="visuallyhidden">
+						<label for="star4">
+							<span class="visuallyhidden">4 Stars</span>
+									<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+						</label>
+
+						<input value="5" id="star5"
+							type="radio" name="rating" class="visuallyhidden">
+						<label for="star5">
+							<span class="visuallyhidden">5 Stars</span>
+									<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+						</label>
+
+					</div>
+				</fieldset>
+			</td>
+			<td>
+
+			</td>
+			<td>
+
+			</td> 
+		</tr>
+	</tbody>
+</table>

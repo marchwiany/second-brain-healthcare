@@ -1,0 +1,219 @@
+/*-----------------------
+Account Layout
+-----------------------*/
+.content-wrapper{
+  @include grid-media($tablet-landscape){
+    @include grid-container;
+    @include grid-collapse;
+  }
+
+  .account-navigation{
+  	display: none;
+
+    @include grid-media($tablet-landscape){
+    	display: block;
+      @include grid-column(2.75);
+    }
+  }
+
+  .content-block{
+    @include grid-media($tablet-landscape){
+      @include grid-column(9.25);
+    }
+  }
+}
+
+.account-wrapper{
+
+  .card{
+    .card-inner{
+      @include grid-media($tablet) {
+        @include rem(padding, 40px 60px);
+      }
+
+      h2{
+        @include s-medium;
+
+        @include grid-media($tablet) {
+        	@include s-large;
+        }
+
+        img{
+          width: 20px;
+          vertical-align: middle;
+          @include rem(margin-right, 5px);
+          vertical-align: top;
+
+          @include grid-media($tablet) {
+          	width: 30px;
+          }
+        }
+
+        span{
+        	display: inline-block;
+        	width: calc(100% - 44px);
+        }
+      }
+
+      h2 ~ p{
+        @include rem(margin-top, 10px);
+      }
+
+      h2 ~ form, h2 ~ table{
+        @include rem(margin-top, 15px);
+
+      }
+
+      h3{
+        @include s-base;
+
+        @include grid-media($tablet) {
+        	@include s-big;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------
+Alert Banner
+-----------------------*/
+.alert-banner{
+  @include rem(padding, 10px);
+  background-color: $blue-base;
+  text-align: center;
+
+  .inner{
+
+    img, p, a, button{
+      display: inline-block;
+    }
+
+    img{
+      @include rem(margin-right, 5px); 
+      width: 20px;
+      vertical-align: middle;
+    }
+
+    p{
+      color: $white-base;
+      margin-bottom: 0px;
+      line-height: normal;
+      @include rem(padding, 10px 0px);
+    }
+
+    p ~ a, p ~ button{
+      @include rem(margin-left, 5px); 
+    }
+  }
+}
+
+/*-----------------------
+Account Header
+-----------------------*/
+.account-header{
+  background-color: $white-base;
+  box-shadow: 0 2px 4px 0 rgba(191,191,191,0.50);
+
+  .inner{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: block;
+    @include rem(padding, 15px 20px);
+
+    @include grid-media($tablet) { @include rem(padding, 25px 30px); }
+
+    h1{
+      margin: 0px;
+      width: inherit;
+      display: inline-block;
+      @include s-large;
+    }
+
+    select{
+      @include rem(margin-top, 10px);
+
+      @include grid-media($tablet) {
+        display: inline-block;
+        width: 300px;
+        @include rem(margin-top, -5px);
+        float: right;
+      }
+
+      @include grid-media($tablet-landscape) {
+        display: none;
+      }
+    }
+
+    a{
+      display: none;
+      @include grid-media($tablet-landscape) {
+        display: inline-block;
+      }
+
+      img{
+        width: 20px;
+        display: inline-block;
+        @include rem(margin-right, 5px);
+        vertical-align: middle;
+      }
+
+      @include grid-media($tablet) {
+        float: right;
+        @include rem(margin, 5px 0px 0px);
+      }
+    }
+  }
+}
+
+/*-----------------------
+Account Navigation
+-----------------------*/
+.account-navigation{
+  li{
+    border-left: 4px solid transparent;
+
+    a{
+      display: inline-block;
+      @include rem(padding, 15px 15px);
+      text-decoration: none;
+      width: 100%;
+      border-bottom: $grey-border;
+
+      img{
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        @include rem(margin-right, 10px);
+        vertical-align: middle;
+
+        &:nth-child(2){
+          display: none;
+        }
+      }
+    }
+
+    &:last-child{
+      a{
+        border: none;
+      }
+    }
+
+    &.is-active{
+      background-color: #E9ECF4;
+      border-color: $primary-base;
+
+      a{
+        color: $primary-base;
+
+        img:nth-child(1){
+          display: none;
+        }
+
+        img:nth-child(2){
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

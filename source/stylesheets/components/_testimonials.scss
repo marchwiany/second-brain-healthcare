@@ -1,0 +1,147 @@
+/*-----------------------
+Testimonials
+-----------------------*/
+.testimonial-blocks .slick-list{
+
+	blockquote p, cite{
+		color: $white-base;
+	}
+
+	blockquote p{
+		@include s-big;
+	}
+
+	cite{
+		display: block;
+		font-weight: $bold;
+		@include rem(margin-top, 10px);
+		@include s-small;
+	}
+
+	li{
+		background-size: cover !important;
+		@include rem(margin-top, 20px);
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+
+		@include grid-media($tablet){
+			height: 380px;
+		}
+
+		@include grid-media($tablet-landscape){
+			height: 280px;
+		}
+
+		blockquote{
+			@include rem(padding, 30px);
+			width: 100%;
+
+			@include grid-media($tablet){
+				@include vertical-horizontal-center;
+			}
+		}
+	}
+
+	li:nth-child(2), li:nth-child(5){
+
+		blockquote{
+			@include rem(padding, 80px 30px);
+
+			@include grid-media($tablet){
+				@include rem(padding, 30px);
+			}
+		}
+
+		&:after{
+			content:"";
+			opacity: 0.55;
+			background-color: rgba(#000, 100%);
+			@include position(absolute, 0px 0px 0px 0px);
+			z-index: -1;
+
+			@include grid-media($tablet){
+				display: none;
+			}
+		}
+	}
+
+	li:nth-child(2){
+		background-color: $primary-base;
+
+		@include grid-media($tablet){
+			@include rem(margin-left, 20px);
+
+		}
+	}
+
+
+	li:nth-child(3){
+		background-color: $primary-base;
+
+		@include grid-media($tablet){
+			background-color: $primary-dark;
+			@include rem(margin-right, 20px);
+		}
+	}
+
+	li:nth-child(4){
+		background-color: $primary-dark;
+	}
+
+	li:nth-child(2), li:nth-child(3){
+		@include grid-media($tablet){
+			width: calc(70% - 28px) !important;
+		}
+
+		blockquote{
+			@include grid-media($tablet){
+				max-width: 80%;
+			}
+
+			&:after{
+				@include grid-media($tablet){
+					content: "\201C";
+					font-size: 280px;
+					color: $white-base;
+					opacity: 0.2;
+					position: absolute;
+					top: 100px;
+					left: -45px;
+					font-family: Helvetica;
+				}
+			}
+		}
+	}
+
+	li:nth-child(1), li:nth-child(4){
+		position: relative;
+		z-index: 1;
+
+		@include grid-media($tablet){
+			width: 30%;
+		}
+
+		&:after{
+			@include grid-media($tablet){
+				content:"";
+				opacity: 0.55;
+				background-color: rgba(#000, 100%);
+				@include position(absolute, 0px 0px 0px 0px);
+				z-index: -1;
+			}
+		}
+
+
+		p{
+			text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+			line-height: 1.5;
+		}
+	}
+}
+
+.testimonial-block-container{
+	.slick-dots{
+		@include rem(margin-top, 20px);
+	}
+}

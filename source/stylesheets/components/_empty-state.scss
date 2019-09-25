@@ -1,0 +1,41 @@
+/*-----------------------
+Empty State
+-----------------------*/
+
+.empty-state{
+	background-color: $blue-grey-dark;
+	display: flex;
+	border-radius: 8px;
+
+	.image-block{
+		background-color: darken($blue-grey-dark, 5%);
+		position: relative;
+		width: 150px;
+		display: inline-block;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+
+		img{
+			@include vertical-horizontal-center;
+			width: 30px;
+
+			@include grid-media($tablet){
+				width: 40px;
+			}
+		}
+	}
+
+	.text-block{
+		@include rem(padding, 20px);
+
+		h2{
+			@include s-medium;
+			font-weight: bold;
+			@include rem(margin-bottom, 5px);
+		}
+
+		p{
+			line-height: 1.6;
+		}
+	}
+}

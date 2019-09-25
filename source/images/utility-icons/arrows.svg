@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="10px" viewBox="0 0 5 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/--Input-/-Select-/-Labelled-/-With-Text" transform="translate(-256.000000, -29.000000)" fill="#4A4A4A">
+            <g id="Group" transform="translate(256.000000, 29.000000)">
+                <polygon id="Triangle" points="2.5 -1.77635684e-15 5 4 0 4"></polygon>
+                <polygon id="Triangle" transform="translate(2.500000, 8.000000) scale(1, -1) translate(-2.500000, -8.000000) " points="2.5 6 5 10 0 10"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
