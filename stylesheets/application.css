@@ -6480,8 +6480,15 @@ nav {
 /* line 15, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .section-header {
   text-align: center; }
+  /* line 18, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .section-header p {
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
 
-/* line 22, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 27, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 header span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -6493,11 +6500,11 @@ header span {
   font-size: 13px;
   font-size: 0.92857rem; }
 
-/* line 33, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 38, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .centered {
   text-align: center; }
 
-/* line 39, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 44, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .card {
   background: #FFFFFF;
   box-shadow: 0 2px 20px 0 rgba(191, 191, 191, 0.5);
@@ -6506,7 +6513,7 @@ header span {
 /*-----------------------
 Header
 -----------------------*/
-/* line 48, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 53, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 nav {
   position: absolute;
   top: 0px;
@@ -6515,28 +6522,28 @@ nav {
   z-index: 3;
   padding: 20px;
   padding: 1.42857rem; }
-  /* line 54, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 59, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   nav .logo img {
     width: 140px; }
-  /* line 59, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 64, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   nav ul {
     float: right;
     margin-top: 5px;
     margin-top: 0.35714rem; }
-    /* line 63, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 68, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     nav ul li {
       display: inline-block;
       margin-left: 20px;
       margin-left: 1.42857rem;
       display: none; }
       @media only screen and (min-width: 1200px) {
-        /* line 63, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+        /* line 68, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
         nav ul li {
           display: inline-block; } }
-      /* line 72, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 77, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       nav ul li:last-child {
         display: inline-block; }
-      /* line 76, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 81, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       nav ul li a {
         color: #FFFFFF;
         text-decoration: none;
@@ -6544,11 +6551,11 @@ nav {
         font-size: 0.78571rem;
         letter-spacing: 1px;
         text-transform: uppercase; }
-        /* line 83, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+        /* line 88, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
         nav ul li a:hover {
           color: #FFFFFF;
           opacity: 0.8; }
-      /* line 89, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 94, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       nav ul li .button-light-outline {
         min-width: 0px;
         font-size: 11px;
@@ -6559,43 +6566,109 @@ nav {
 Image Text Block
 -----------------------*/
 @media only screen and (min-width: 720px) {
-  /* line 102, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 107, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .image-text-block-container {
     display: flex;
     align-items: center; } }
-/* line 108, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 113, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .image-text-block-container img {
   margin-bottom: 20px;
   margin-bottom: 1.42857rem; }
   @media only screen and (min-width: 720px) {
-    /* line 108, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 113, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .image-text-block-container img {
       margin-bottom: 0px; } }
 @media only screen and (min-width: 720px) {
-  /* line 116, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 121, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .image-text-block-container img, .image-text-block-container .text-block {
     width: 50%; } }
 @media only screen and (min-width: 720px) {
-  /* line 122, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 127, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .image-text-block-container .text-block {
     padding-left: 60px;
     padding-left: 4.28571rem; } }
 
 /*-----------------------
+Stats
+-----------------------*/
+/* line 137, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+.fact-block-container {
+  border-top: 1px solid #D6D6D6; }
+  @media only screen and (min-width: 720px) {
+    /* line 140, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    .fact-block-container .facts {
+      display: flex; } }
+  /* line 145, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .fact-block-container .facts li {
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    text-align: center; }
+    /* line 151, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    .fact-block-container .facts li span {
+      font-size: 35px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      display: block; }
+    /* line 158, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    .fact-block-container .facts li p {
+      line-height: 1.6; }
+  /* line 164, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .fact-block-container .callout {
+    background-color: #B9E4E8;
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px; }
+    /* line 170, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    .fact-block-container .callout h2 {
+      font-style: italic;
+      font-weight: bold; }
+
+/* line 177, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+.callout {
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  text-align: center; }
+  /* line 183, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .callout:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #15191C;
+    opacity: 0.6; }
+  /* line 192, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .callout h2 {
+    color: #FFFFFF;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    font-size: 50px;
+    padding: 30px; }
+
+/*-----------------------
 Checkboxes
 -----------------------*/
-/* line 132, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 205, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .wrapper {
   background-color: #FAF8F5; }
-  /* line 135, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 208, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .wrapper.dark {
     background-color: #4A4A4A; }
 
-/* line 141, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 214, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .checkbox-block-container .form {
   padding: 20px 0px;
   padding: 1.42857rem 0px; }
-  /* line 144, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 217, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .checkbox-block-container .form .isEmbed.isSmartEmbed .jfCard {
     padding: 50px 0px;
     padding: 3.57143rem 0px; }
@@ -6603,23 +6676,23 @@ Checkboxes
 /*-----------------------
 Grid Block
 -----------------------*/
-/* line 156, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 229, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .grid-block-container ul li {
   counter-increment: count;
   margin-top: 30px;
   margin-top: 2.14286rem; }
   @media only screen and (min-width: 720px) {
-    /* line 156, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 229, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .grid-block-container ul li {
       width: calc(33.33333% - 42.66667px);
       float: left;
       margin-left: 32px; } }
-  /* line 164, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 237, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .grid-block-container ul li .image-block {
     margin-bottom: 20px;
     margin-bottom: 1.42857rem;
     position: relative; }
-    /* line 168, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 241, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .grid-block-container ul li .image-block:after {
       background-color: #E8B9B9;
       border: 2px solid #FFFFFF;
@@ -6635,39 +6708,42 @@ Grid Block
       margin-top: -2.14286rem;
       z-index: 1;
       position: relative; }
-  /* line 186, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 259, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .grid-block-container ul li:nth-child(2) .image-block:after {
     background-color: #FAE24E; }
-  /* line 192, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 265, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .grid-block-container ul li:nth-child(3) .image-block:after {
     background-color: #B9E4E8; }
-  /* line 197, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 270, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .grid-block-container ul li h3 {
     font-weight: 500; }
 
 /*-----------------------
 Process
 -----------------------*/
-/* line 207, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 280, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .process-block-container {
   text-align: center; }
-  /* line 210, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 283, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  .process-block-container .graphic {
+    margin-top: 30px; }
+  /* line 287, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .process-block-container ul {
     display: inline-block;
     width: 100%; }
-  /* line 215, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 292, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .process-block-container li {
     margin-top: 30px;
     margin-top: 2.14286rem;
     position: relative; }
     @media only screen and (min-width: 720px) {
-      /* line 215, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 292, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       .process-block-container li {
         width: calc(16.66667% - 37.33333px);
         float: left;
         margin-left: 32px; } }
     @media only screen and (min-width: 1200px) {
-      /* line 224, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 301, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       .process-block-container li:not(:last-child):after {
         content: "";
         background-image: url("../images/icons/arrow.svg");
@@ -6678,27 +6754,27 @@ Process
         position: absolute;
         top: 40px;
         right: -13%; } }
-    /* line 239, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 316, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .process-block-container li img {
       height: 90px;
       width: 90px;
       display: block;
       margin: 0 auto; }
-    /* line 246, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 323, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .process-block-container li p {
       margin-top: 10px;
       margin-top: 0.71429rem;
       line-height: 1.6; }
-    /* line 252, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 329, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .process-block-container li:nth-child(1) img, .process-block-container li:nth-child(2) img {
       background-color: #E8B9B9; }
-    /* line 258, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 335, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .process-block-container li:nth-child(3) img, .process-block-container li:nth-child(4) img {
       background-color: #FAE24E; }
-    /* line 264, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 341, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .process-block-container li:nth-child(5) img, .process-block-container li:nth-child(6) img {
       background-color: #B9E4E8; }
-  /* line 270, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 347, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .process-block-container .button-neutral {
     margin-top: 30px;
     margin-top: 2.14286rem; }
@@ -6706,32 +6782,32 @@ Process
 /*-----------------------
 Job
 -----------------------*/
-/* line 281, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 358, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .job-block-container .text-block h2, .job-block-container .text-block p {
   color: #FFFFFF; }
 @media only screen and (min-width: 1200px) {
-  /* line 286, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 363, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .job-block-container .text-block, .job-block-container .accordion {
     width: calc(45.83333% - 32.08333px);
     float: left;
     margin-left: 22px; } }
 @media only screen and (min-width: 1200px) {
-  /* line 292, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 369, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .job-block-container .accordion {
     left: calc(8.33333% - 23.83333px + 22px);
     position: relative; } }
 
-/* line 299, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 376, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 .accordion {
   background-color: #FFFFFF;
   margin-top: 30px;
   margin-top: 2.14286rem; }
   @media only screen and (min-width: 1200px) {
-    /* line 299, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 376, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion {
       margin-top: 50px;
       margin-top: 3.57143rem; } }
-  /* line 307, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 384, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .accordion .js-accordion-trigger {
     text-decoration: none;
     display: inline-block;
@@ -6739,7 +6815,7 @@ Job
     padding: 15px 20px;
     padding: 1.07143rem 1.42857rem;
     position: relative; }
-    /* line 314, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 391, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion .js-accordion-trigger img {
       height: 70px;
       width: 70px;
@@ -6748,18 +6824,18 @@ Job
       margin-right: 20px;
       margin-right: 1.42857rem; }
       @media only screen and (min-width: 720px) {
-        /* line 314, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+        /* line 391, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
         .accordion .js-accordion-trigger img {
           display: inline-block; } }
-    /* line 326, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 403, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion .js-accordion-trigger h3, .accordion .js-accordion-trigger img {
       vertical-align: middle; }
-    /* line 330, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 407, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion .js-accordion-trigger h3 {
       font-weight: 500;
       display: inline-block;
       margin: 0px; }
-      /* line 335, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+      /* line 412, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
       .accordion .js-accordion-trigger h3:after {
         content: "";
         background-image: url("../images/icons/arrow-down.svg");
@@ -6771,26 +6847,26 @@ Job
         position: absolute;
         top: 50%;
         right: 30px; }
-  /* line 348, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 425, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .accordion .submenu {
     display: none;
     padding: 0px 20px 20px;
     padding: 0px 1.42857rem 1.42857rem; }
-    /* line 352, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 429, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion .submenu p {
       margin-bottom: 0px; }
-  /* line 357, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+  /* line 434, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
   .accordion .is-expanded {
     display: block;
     padding-bottom: 0; }
-    /* line 362, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+    /* line 439, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
     .accordion .is-expanded h3:after {
       transform: rotate(180deg); }
 
 /*-----------------------
 Footer
 -----------------------*/
-/* line 373, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
+/* line 450, /Users/moniquemarchwiany/Documents/github/second-brain-healthcare/source/stylesheets/pages/_home.scss */
 footer p {
   text-align: center;
   padding: 20px;
