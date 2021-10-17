@@ -370,6 +370,21 @@ Job
 		@include grid-media($tablet-landscape){
 			@include grid-shift(1);
 		}
+
+		.js-accordion-trigger{
+			align-items: center;
+			display: flex;
+
+			h3{
+				padding-right: 40px;
+			}
+		}
+
+		.submenu{
+			p{
+				margin-bottom: 15px;
+			}
+		}
 	}
 }
 
